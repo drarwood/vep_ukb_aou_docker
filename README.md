@@ -8,7 +8,7 @@ VEP has been containerized through Docker so you can reproduce annotations previ
 
 
 ## Get the data dependences used for VEP
-Data related to v110 of the vep cache, fasta files, custom annotations, and plugin data dependencies can be found [here](https://console.cloud.google.com/storage/browser/vepdata;tab=objects?forceOnBucketsSortingFiltering=true&authuser=1&project=local-pointer-430908-c7&prefix=&forceOnObjectsSortingFiltering=false) presently.
+Data related to v110 of the VEP cache, fasta files, custom annotations, and plugin data dependencies can be found [here](https://console.cloud.google.com/storage/browser/vepdata;tab=objects?forceOnBucketsSortingFiltering=true&authuser=1&project=local-pointer-430908-c7&prefix=&forceOnObjectsSortingFiltering=false) presently.
 Scripts have been provided based on gsutil and wget. Both of the file scripts above will download the required data into a new directory called `vep_data`.
 
 ```
