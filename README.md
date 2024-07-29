@@ -80,4 +80,4 @@ Notes:
  * If running chromosome-wide site lists for UKB / AoU, it is strongly recommended you do this either one chromosome at a time, or in parallel across multiple cloud workstations.
  * The default worker used for AoU and UKB was `mem1_ssd1_v2_x72`
  * If placing above command in script on DNAnexus, its a good idea to use the following command once you uploaded the results to your project: `dx-set-timeout 0s`
- * Compression ratio is high given repeating sequences of `-` when gzip compressing vep output.
+ * Compression ratio is high given repeating sequences of `-` when gzip compressing output from VEP.
