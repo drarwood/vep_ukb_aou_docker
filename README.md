@@ -8,14 +8,14 @@ Scripts have been provided based on gsutil and wget. Both of the file scripts ab
 
 ```
 # gsutil
-bash get_vep_data_wget.sh
+bash get_vep_data_gsutil.sh
 ```
 ```
 # wget
 bash get_vep_data_wget.sh
 ```
 
-This will take some time, but only has to be done once.
+This will take some time as the size of the data is ~250Gb, but only has to be done once.
 
 
 ## Get the site list for ready for VEP
