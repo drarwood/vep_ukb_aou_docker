@@ -38,10 +38,10 @@ sudo docker pull drarwood/vep
 ```
 
 ## Run VEP through docker
-Once the docker containiner has been built, you can run docker ensuring you have mounted the `vep_data` directory to `/usr/data/` inside the container. The following is an example command assuming the above has been performed on DNAnexus cloud workstation and the chr22 site list for UK Biobank is to be put through VEP:
-
+Once the docker containiner has been built, you can run docker ensuring you have mounted the `vep_data` directory to `/usr/data/` inside the container. 
+The following is an example command assuming the above has been performed on DNAnexus cloud workstation and the chr22 site list for UK Biobank is to be put through VEP.
+Note the mounting `/home/dnanexus/vep_data:/usr/data`:
 ```
-# Example command for chr 22
 sudo docker run -itv /home/dnanexus/vep_data:/usr/data drarwood/vep vep \
   -i /usr/data/ukb24310_c22_ALL_v1_var_list_indels_normalised.vcf \
   -o /usr/data/chr22.vep \
