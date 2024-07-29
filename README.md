@@ -26,7 +26,7 @@ This will take some time as the size of the data is ~250Gb, but only has to be d
 
 
 ## Get the site list for ready for VEP
-You should place the input site list vcf into the `vep_data` directory as well.
+The vcf needs to simply include chromosome, bp (b38), REF and ALT. You should place the input site list vcf into the `vep_data` directory as well.
 
 
 ## Get and build the docker container
