@@ -16,6 +16,13 @@ bash get_vep_data_wget.sh
 ```
 
 
+This will take some time, but only has to be done once.
+
+
+## Get the site list for vep ready
+You should place the input site list vcf into the `vep_data` directory as well.
+
+
 
 ## Get and build the docker container
 ```
