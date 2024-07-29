@@ -59,7 +59,7 @@ sudo docker run -itv /home/dnanexus/vep_data:/usr/data drarwood/vep vep \
   --plugin Conservation,/usr/data/plugin_data/gerp_conservation_scores.homo_sapiens.GRCh38.bw \
   --plugin SpliceAI,snv=/usr/data/plugin_data/spliceai_scores.raw.snv.hg38.vcf.gz,indel=/usr/data/plugin_data/spliceai_scores.raw.indel.hg38.vcf.gz \
   --plugin REVEL,/usr/data/plugin_data/new_tabbed_revel_grch38.tsv.gz \
-  --plugin LoF,loftee_path:/usr/.vep/Plugins/loftee,gerp_bigwig:/usr/data/gerp_conservation_scores.homo_sapiens.GRCh38.bw,human_ancestor_fa:/usr/data/human_ancestor.fa.gz,conservation_file:/usr/data/loftee.sql \
+  --plugin LoF,loftee_path:/usr/.vep/Plugins/loftee,gerp_bigwig:/usr/data/plugin_data/gerp_conservation_scores.homo_sapiens.GRCh38.bw,human_ancestor_fa:/usr/data/plugin_data/human_ancestor.fa.gz,conservation_file:/usr/data/plugin_data/loftee.sql \
   --plugin UTRannotator,/usr/.vep/Plugins/UTRannotator/uORF_5UTR_GRCh38_PUBLIC.txt \
   --plugin AlphaMissense,file=/usr/data/plugin_data/AlphaMissense_hg38.tsv.gz \
   --plugin EVE,file=/usr/data/plugin_data/eve_merged.vcf.gz \
