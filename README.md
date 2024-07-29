@@ -50,7 +50,7 @@ sudo docker run -itv /home/dnanexus/vep_data:/usr/data drarwood/vep vep \
   --dir_cache /usr/data/ \
   --fasta /usr/data/fasta/Homo_sapiens.GRCh38.dna.toplevel.fa.gz \
   --everything \
-  --fork 32 \
+  --fork 64 \
   --no_stats \
   --custom /usr/data/custom_annotations/riboseq_mudge_et_al_st2_data_ARW.bed.gz,riboseq_orf,bed,overlap,0 \
   --custom /usr/data/custom_annotations/chen_constraint_z_Supplementary_Data_2_region_labels.bed.gz,constraint_z_region,bed,overlap,0 \
