@@ -1,3 +1,4 @@
+```
 # Example command for chr 22
 sudo docker run -itv /home/dnanexus/vep_data:/usr/data drarwood/vep vep \
   -i /usr/data/ukb24310_c22_ALL_v1_var_list_indels_normalised.vcf \
@@ -32,4 +33,4 @@ sudo docker run -itv /home/dnanexus/vep_data:/usr/data drarwood/vep vep \
   --plugin PrimateAI,/usr/data/plugin_data/PrimateAI_scores_v0.2_GRCh38_sorted.tsv.bgz \
   --plugin SpliceRegion >& chr22.vep.csl &
 
-
+```
