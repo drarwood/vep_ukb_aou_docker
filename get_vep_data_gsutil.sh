@@ -19,7 +19,7 @@ rm plugin_data.tar.gz
 
 gsutil -m cp gs://vepdata/homo_sapiens_vep_110_GRCh38.tar.gz .
 tar -zxvf homo_sapiens_vep_110_GRCh38.tar.gz
-rm homo_sapiens_vep_110_GRCh38
+rm homo_sapiens_vep_110_GRCh38.tar.gz
 
 
 
