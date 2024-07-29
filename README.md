@@ -8,7 +8,7 @@ Steps to perform annotation of variants using the docker are:
  1. Download data dependencies for docker
  2. Prepare and place vcf site list in vep data directory
  3. Pull down and build docker image
- 4. Mount docker directory to container and run
+ 4. Mount local data directory to container and run
 
 
 ## Get the data dependences used for VEP
