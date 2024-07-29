@@ -10,6 +10,7 @@ Scripts have been provided based on gsutil and wget. Both of the file scripts ab
 # gsutil
 bash get_vep_data_gsutil.sh
 ```
+or
 ```
 # wget
 bash get_vep_data_wget.sh
