@@ -69,7 +69,7 @@ sudo docker run -itv /home/dnanexus/vep_data:/usr/data drarwood/vep vep \
 
 Notes:
  * Jarvis score files are chromosome specific, and no Jarvis files exist for chrX.
- * You may want to amend the number of forks dependning on the number of processors available
+ * You may want to amend the number of forks depending on the number of processors available to you
  * If running chromosome-wide site lists for UKB / AoU, it is strongly recommended you do this either one chromosome at a time, or in parallel across multiple cloud workstations.
  * The default worker used for AoU and UKB was `mem1_ssd1_v2_x72`
  * If placing above command in script on DNAnexus, its a good idea to use the following command once you uploaded the results to your project: `dx-set-timeout 0s`
