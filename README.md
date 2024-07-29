@@ -15,13 +15,11 @@ bash get_vep_data_wget.sh
 bash get_vep_data_wget.sh
 ```
 
-
 This will take some time, but only has to be done once.
 
 
-## Get the site list for vep ready
+## Get the site list for ready for VEP
 You should place the input site list vcf into the `vep_data` directory as well.
-
 
 
 ## Get and build the docker container
@@ -29,7 +27,10 @@ You should place the input site list vcf into the `vep_data` directory as well.
 sudo docker pull drarwood/vep
 ```
 
-Once the docker containiner has been built, you can run docker ensuring you have mounted to the `vep_data` directory to it:
+## Run VEP through docker
+Once the docker containiner has been built, you can run docker ensuring you have mounted the `vep_data` directory to `/usr/data/` inside the container.  
+The following is an example command assuming the above has been performed on DNAnexus cloud workstation and the chr22 site list for UK Biobank is to be put through VEP:
+
 ```
 # Example command for chr 22
 sudo docker run -itv /home/dnanexus/vep_data:/usr/data drarwood/vep vep \
@@ -64,5 +65,11 @@ sudo docker run -itv /home/dnanexus/vep_data:/usr/data drarwood/vep vep \
   --plugin EVE,file=/usr/data/plugin_data/eve_merged.vcf.gz \
   --plugin PrimateAI,/usr/data/plugin_data/PrimateAI_scores_v0.2_GRCh38_sorted.tsv.bgz \
   --plugin SpliceRegion >& chr22.vep.csl &
-
 ```
+
+Note:
+
+ * Jarvis score files are chromosome specific, and no Jarvis files exist for chrX.
+ * You may want to amend the number of forks dependening on the number of processors available
+ * If running chromosome-wide site lists for UKB / AoU, it is strongly recommended you do this either one chromosome at a time, or in parallel across multiple cloud workstations.
+ * The default worker used for AoU and UKB was `mem1_ssd1_v2_x72`
