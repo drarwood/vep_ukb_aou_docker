@@ -30,7 +30,7 @@ This will take some time as the size of the data is ~250Gb, but only has to be d
 
 
 ## Get the site list for ready for VEP
-The vcf needs to simply include chromosome, bp (b38), REF and ALT. You should place the input site list vcf into the `vep_data` directory as well.
+The vcf needs to simply include the first 5 columns of a standard VCF (after headers) - CHROM, BP (b38), ID, REF and ALT. You should place the input site list vcf into the `vep_data` directory as well.
 
 
 ## Get image and build the Docker container
@@ -41,7 +41,7 @@ sudo docker pull drarwood/vep
 ## Run VEP using Docker
 Once the Docker containiner has been built, you can run VEP ensuring you have mounted the `vep_data` directory to `/usr/data/` inside the container. 
 The following is an example command assuming the above has been performed on DNAnexus cloud workstation and the chr22 site list for UK Biobank is to be put through VEP.
-Note the mounting of the local directory to the container directory is given as `/home/dnanexus/vep_data:/usr/data` within the following command:
+Note the mounting of the local directory to the container directory is given as `/home/dnanexus/vep_data:/usr/data` within the following command, where `chr22.vcf` is an input VCF and `chr22.vep` is the name of the output file to be produced by VEP:
 ```
 sudo docker run -itv /home/dnanexus/vep_data:/usr/data drarwood/vep vep \
   -i /usr/data/ukb24310_c22_ALL_v1_var_list_indels_normalised.vcf \
