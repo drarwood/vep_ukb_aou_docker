@@ -34,6 +34,7 @@ The vcf needs to simply include the first 5 columns of a standard VCF (after hea
 
 
 ## Get image and build the Docker container
+You can pull down the Docker image from the Docker repo site using the following command:
 ```
 sudo docker pull drarwood/vep
 ```
