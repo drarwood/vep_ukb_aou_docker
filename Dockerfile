@@ -1,3 +1,6 @@
+# Written by Andrew Wood
+# Questions to A.R.Wood@exeter.ac.uk
+
 # Specify the base image -- here we're using one that bundles the OpenJDK version of Java 8 on top of a generic Debian Linux OS
 FROM ubuntu:22.04
 ARG DEBIAN_FRONTEND=noninteractive
