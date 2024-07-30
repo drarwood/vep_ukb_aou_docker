@@ -75,7 +75,7 @@ sudo docker run -itv /home/dnanexus/vep_data:/usr/data drarwood/vep vep \
   --plugin AlphaMissense,file=/usr/data/plugin_data/AlphaMissense_hg38.tsv.gz \
   --plugin EVE,file=/usr/data/plugin_data/eve_merged.vcf.gz \
   --plugin PrimateAI,/usr/data/plugin_data/PrimateAI_scores_v0.2_GRCh38_sorted.tsv.bgz \
-  --plugin SpliceRegion >& chr22.vep.csl &
+  --plugin SpliceRegion 
 ```
 
 Notes:
