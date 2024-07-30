@@ -26,7 +26,7 @@ or
 bash get_vep_data_wget.sh
 ```
 
-This will take some time as the size of the data is ~250Gb, but only has to be done once. If running on DNAnexus cloud workstation, it would beneifical to create a snapshot so you don't have to download again but instantiate a snapshot instead.
+This will take some time as the size of the data is ~250Gb, but only has to be done once. If running on DNAnexus cloud workstation, it would beneficial to create a snapshot so you don't have to download again but instantiate a snapshot instead.
 
 
 ## Get the site list for ready for VEP
