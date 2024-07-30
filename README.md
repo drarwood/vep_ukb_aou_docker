@@ -10,6 +10,7 @@ Steps to perform annotation of variants using the Docker container are:
  3. Pull down and build Docker image
  4. Mount local data directory to container and run
 
+Note, the Dockerfile has been included in this repo for completeness - you do not need it to follow the instructions below.
 
 ## Get the data dependences used for VEP
 Data related to v110 of the VEP cache, fasta files, custom annotations, and plugin data dependencies can be found [here](https://console.cloud.google.com/storage/browser/vepdata;tab=objects?forceOnBucketsSortingFiltering=true&authuser=1&project=local-pointer-430908-c7&prefix=&forceOnObjectsSortingFiltering=false).
