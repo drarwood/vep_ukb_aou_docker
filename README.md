@@ -45,7 +45,7 @@ The following is an example command assuming the above has been performed on DNA
 Note the mounting of the local directory to the container directory is given as `/home/dnanexus/vep_data:/usr/data` within the following command, where `chr22.vcf` is an input VCF and `chr22.vep` is the name of the output file to be produced by VEP:
 ```
 sudo docker run -itv /home/dnanexus/vep_data:/usr/data drarwood/vep vep \
-  -i /usr/data/ukb24310_c22_ALL_v1_var_list_indels_normalised.vcf \
+  -i /usr/data/chr22.vcf \
   -o /usr/data/chr22.vep \
   --tab \
   --assembly GRCh38 \
