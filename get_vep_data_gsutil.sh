@@ -17,9 +17,9 @@ gsutil -m cp gs://vep_dependencies/plugin_data.tar.gz .
 tar -zxvf plugin_data.tar.gz
 rm plugin_data.tar.gz
 
-gsutil -m cp gs://vep_dependencies/homo_sapiens_vep_110_GRCh38.tar.gz .
-tar -zxvf homo_sapiens_vep_110_GRCh38.tar.gz
-rm homo_sapiens_vep_110_GRCh38.tar.gz
+gsutil -m cp gs://vep_dependencies/homo_sapiens_vep_115_GRCh38.tar.gz .
+tar -zxvf homo_sapiens_vep_115_GRCh38.tar.gz
+rm homo_sapiens_vep_115_GRCh38.tar.gz
 
 
 
