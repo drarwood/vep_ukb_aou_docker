@@ -48,13 +48,13 @@ This will take some time as the size of the data is ~250Gb, but only has to be d
 The vcf needs to simply include the first 5 columns of a standard VCF (after headers) - CHROM, BP (b38), ID, REF and ALT. You should place the input site list vcf into the `vep_data` directory as well.
 
 
-## Get image and build the Docker container
+## Get image and build the Docker container - you might need to be root (use sudo then)
 You can pull down the Docker image from the Docker repo site using the following command:
 ```
-sudo docker pull weedonml/vep
+docker pull weedonml/vep_ukb_aou_docker:v115
 ```
 
-# an example to build the docker 
+# an example to build the docker from the DockerFile 
 docker build -t weedonml/vep_ukb_aou_docker:v115 .
 
 ## Run VEP using Docker
