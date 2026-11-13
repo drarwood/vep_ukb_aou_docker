@@ -13,8 +13,7 @@ Steps to perform annotation of variants using the Docker container are:
 Note, the Dockerfile has been included in this repo for completeness - you do not need it to follow the instructions below.
 
 ## Get the data dependences used for VEP
-Data related to v110 of the VEP cache, fasta files, custom annotations, and plugin data dependencies can be found 
-[here](https://console.cloud.google.com/storage/browser/vep_dependencies;tab=objects?forceOnBucketsSortingFiltering=true&authuser=1&project=studied-glow-412708&prefix=&forceOnObjectsSortingFiltering=false).
+Data related to v110 of the VEP cache, fasta files, custom annotations, and plugin data dependencies are available on request owing to their file size.
 Scripts have been provided based on gsutil and wget. Both of the file scripts above will download the required data into a new directory called `vep_data`.
 
 ```
